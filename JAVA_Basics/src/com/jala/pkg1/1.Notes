@@ -1,0 +1,27 @@
+How to create a class, object, method and its signature
+
+Create Class.
+->Class is a blue print of an object.
+Syntax: 
+Access_Specifier Class ClassName 
+{
+	// Data Member
+	//Constructor
+    // Method declarations
+}
+
+
+Object Creation.
+->Object is an entity it has state and behavior.
+Syntax:
+ClassName Object_Name = new ClassName();
+
+
+Method Declaration.
+->Method is used to eliminate duplicate line of code.
+->Perform purticular task.
+Syntax:
+Access_Specifier Access_Modifier Return_Type Method_Name(Argument_List)
+{
+	//Lines Of Code
+}
