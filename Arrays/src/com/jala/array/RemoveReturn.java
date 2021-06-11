@@ -1,8 +1,8 @@
 package com.jala.array;
 
-public class RemoveDuplicate
+public class RemoveReturn
 {
-	public static void removeDuplicateElements(int[] arr)
+	public static int[] removeDuplicateElements(int[] arr)
 	{  
 		int ub=arr.length-1;
 		int k=0;
@@ -32,17 +32,17 @@ public class RemoveDuplicate
         	}
         }
         arr1[k]=arr[ub];
-        for (int i = 0; i <= k; i++)
-        {
-			System.out.print(arr1[i]+ " ");
-		}
+       return arr1;
     }  
        
     public static void main (String[] args)
     {  
         int arr[] = {56,45,84,25,16,02,100,25,84,45};  
-        removeDuplicateElements(arr);
+        int[] arr1=new int[arr.length];
+        arr1=removeDuplicateElements(arr);
+        for (int i = 0; i < arr1.length; i++)
+        {
+			System.out.print(arr1[i]+ " ");
+		}
     }  
 }
-
-
